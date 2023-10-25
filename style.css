@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #05057e;
+  background: linear-gradient(#024DD7, #357BFD, #3474FC);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: #fff;
+}
+
+.title-wrapper {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  padding: 1% 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.4em;
+  text-shadow: 5px 5px 3px #000;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+}
+
+.body-wrapper {
+  height: 80%;
+}
+
+.feature-container {
+  height: 100%;
+  padding: 0 2em;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: .8em;
+}
+
+.input-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper form {
+  margin-top: -3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-input {
+  width: 3em;
+  font-size: 4.4em;
+  text-align: center;
+  padding: .2em;
+  border-radius: 20px;
+}
+
+/* Hide the number input spin buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.form-wrapper button {
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: .6em .2em;
+  border: 0;
+  border-radius: 10px;
+  background: #852020;
+  color: #fff;
+}
+
+.form-wrapper button:hover {
+  background-color: #3b0505;
+}
+
+.output-wrapper {
+  /* height: 100%;
+  width: 50%; */
+  padding-top: 5em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 900;
+  line-height: 0.5;
+  font-style: italic;
+}
+
+.output-wrapper h3 {
+  font-size: 2em;
+}
+
+.output-display {
+  width: 3.5em;
+  height: 3.5em;
+  padding: 2px .5em;
+  color: #000;
+  font-size: 3.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #e9e1e1;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: 10%;
+  /* position: fixed;
+  bottom: 1%; */
+  padding-top: .5%;
+  font-size: 1.3em;
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 450px) {
+  .title-wrapper {
+    font-size: 1.8em;
+    padding: 0.2% 0;
+  }
+  
+  .feature-container {
+    gap: 1em;
+  }
+  
+  .form-input {
+    width: 3.8em;
+    font-size: 4.8em;
+  }
+  
+  .form-wrapper button {
+    font-size: 2.2em;
+    padding: .8em .2em;
+  }
+  
+  .output-wrapper {
+    padding-top: 3em;
+    line-height: 0.7;
+  }
+  
+  .output-wrapper h3 {
+    font-size: 2.3em;
+  }
+  
+  .output-display {
+    width: 4em;
+    height: 3.3em;
+    font-size: 4em;
+  }
+  
+  .footer-wrapper {
+    padding-top: .1%;
+    font-size: 1.2em;
+  }  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .input-wrapper form {
+    gap: 1.5em;
+  }
+  
+  .form-input {
+    width: 3.7em;
+    font-size: 5.8em;
+  }
+  
+  .form-wrapper button {
+    font-size: 2.5em;
+    padding: .7em .2em;
+    border-radius: 20px;
+  }
+  
+  .output-wrapper h3 {
+    font-size: 2em;
+  }
+  
+  .output-display {
+    width: 4.3em;
+    height: 3em;
+    font-size: 4.2em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form-input {
+    width: 3.5em;
+  }
+ 
+  .form-wrapper button {
+    font-size: 2.5em;
+  }
+  
+  .output-wrapper {
+    padding-top: 0;
+  }
+  
+  .output-wrapper h3 {
+    font-size: 2.4em;
+  }
+  
+  .output-display {
+    font-size: 5em;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title-wrapper {
+    font-size: 2em;
+  }
+  
+  .form-input {
+    width: 4em;
+  }
+  
+  .form-wrapper button {
+    font-size: 2.5em;
+  }
+  
+  .output-wrapper {
+    margin-top: 5em;
+  }
+  
+  .output-wrapper h3 {
+    font-size: 2.5em;
+  }
+  
+  .output-display {
+    height: 3.2em;
+    border-radius: 35px;
+  }
+  
+  .footer-wrapper {
+    font-size: 1.5em;
+  }
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .input-wrapper form {
+    gap: 2em;
+  }
+  
+  .form-input {
+    width: 3.5em;
+    font-size: 7em;
+  }
+  
+  .output-wrapper h3 {
+    font-size: 3.2em;
+  }
+  
+}   
+
